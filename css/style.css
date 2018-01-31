@@ -1,0 +1,64 @@
+
+/*
+Basic Layout
+*/
+li {
+  justify-content: center;
+  background-color: blue;
+  margin: .2em 1em;
+  padding: .5em 0;
+}
+p {
+  text-align: center;
+}
+
+/*
+Flexbox Layout
+*/
+.main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  justify-content: space-between;
+}
+
+.nav {
+  flex: 1;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+/*
+Link Styling
+*/
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  color: firebrick;
+}
+/*
+Images Styling
+*/
+
+img.small {
+  width: 12.5em;
+  margin: 2em auto;
+}
