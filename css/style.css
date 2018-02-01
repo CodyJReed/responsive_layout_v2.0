@@ -1,5 +1,6 @@
 * {
   box-sizing:border-box;
+  max-width: 1024px;
 }
 /*
 Basic Layout
@@ -50,7 +51,7 @@ Flexbox Layout
 
 .main-header {
   justify-content: space-between;
-  padding-bottom: 2em;
+  padding-bottom: 7%;
 }
 
 .nav {
@@ -113,4 +114,95 @@ Footer Styling
 }
 .link {
   background-color: whitesmoke;
+}
+.hide {
+  display: none;
+}
+/*
+Media Queries
+*/
+@media (min-width: 768px) {
+  li {
+    background-color: whitesmoke;
+  }
+  .main-header,
+  .wrap,
+  .row {
+    display:flex;
+  }
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+  .wrap {
+    flex-flow: row-reverse;
+    width: 100%;
+    margin: 0;
+  }
+  img.profile {
+    flex: 1;
+    margin: 0;
+    padding: 2% 2% 2%;
+  }
+  .wrap p {
+    flex: 1;
+    margin: 0;
+    padding-top: 7%;
+    font-size: 20px;
+  }
+  .row {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .col {
+    flex: 1 50%;
+  }
+  .footer {
+    justify-content: space-around;
+  }
+  footer p {
+    padding: 0 20%;
+  }
+  .link {
+  flex: 1;
+  }
+  .footer-name{
+    flex: 4;
+    order: -2;
+    text-align: left;
+    margin-left: 4%;
+  }
+  .hidden {
+    order: -1;
+    display:none;
+  }
+  .hide {
+    display:flex;
+  }
+}
+@media (min-width: 1024px) {
+.main-header {
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.name {
+margin: 3%;
+}
+
+.main-nav {
+  margin: 2% 2% 2% 0;
+  justify-content: flex-end;
+}
+.wrap p {
+  padding-top: 2%;
+}
+
+.col {
+  flex: 1 33%;
+}
+footer {
+  margin-top: 5%;
+}
 }
