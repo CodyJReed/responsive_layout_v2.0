@@ -1,6 +1,6 @@
 * {
   box-sizing:border-box;
-  max-width: 1024px;
+  max-width: 1150px;
 }
 /*
 Basic Layout
@@ -8,7 +8,7 @@ Basic Layout
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: Oswald, sans-serif;
   font-weight: lighter;
 }
 li {
@@ -133,7 +133,6 @@ Media Queries
   .nav {
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 2%;
   }
   .wrap {
     flex-flow: row-reverse;
@@ -188,11 +187,11 @@ Media Queries
   flex-wrap:wrap;
 }
 .name {
-margin: 3%;
+margin: 4% 3% 3% 3%;
 }
 
 .main-nav {
-  margin: 2% 2% 2% 0;
+  margin: 4% 2% 0 0;
   justify-content: flex-end;
 }
 .wrap p {
